@@ -1,7 +1,11 @@
-cmake_minimum_required(VERSION 3.10)
-project(clang_include_graph)
+cmake_minimum_required(VERSION 3.24)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake")
+
+project(clang_include_graph CXX)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 

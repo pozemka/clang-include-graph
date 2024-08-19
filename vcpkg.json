@@ -1,0 +1,9 @@
+{
+    "name": "clang-include-graph",
+    "dependencies": [
+        "boost-program-options",
+        "boost-graph",
+        "boost-filesystem",
+        "boost-test"
+    ]
+}
